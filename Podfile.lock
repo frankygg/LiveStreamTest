@@ -1,0 +1,18 @@
+PODS:
+  - HappyDNS (0.3.13)
+  - LFLiveKit (2.6)
+  - PLPlayerKit (2.4.3):
+    - HappyDNS (~> 0.3.10)
+
+DEPENDENCIES:
+  - LFLiveKit
+  - PLPlayerKit
+
+SPEC CHECKSUMS:
+  HappyDNS: 17732b07a75bb9756bd6fe04452609e8da8c663e
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
+  PLPlayerKit: 6575f900d3a1c3680e3fd8907338683d0eedcd79
+
+PODFILE CHECKSUM: 75d5a515a3623616eed76116ecb517d8a8877be9
+
+COCOAPODS: 1.4.0

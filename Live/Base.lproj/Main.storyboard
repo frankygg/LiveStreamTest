@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Live" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDD-ZS-ZVk">
+                                <rect key="frame" x="170" y="603" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="liveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xo2-af-MuX"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4N-Jc-EtE">
+                                <rect key="frame" x="10" y="30" width="355" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCm-3y-pLn">
+                                <rect key="frame" x="266" y="603" width="44" height="30"/>
+                                <state key="normal" title="Watch"/>
+                                <connections>
+                                    <action selector="Watch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqQ-re-Nqt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dCm-3y-pLn" secondAttribute="trailing" constant="65" id="DF5-LB-s2t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dCm-3y-pLn" secondAttribute="bottom" constant="34" id="UPm-ZX-Lee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f4N-Jc-EtE" secondAttribute="trailing" constant="10" id="VWc-La-ZVq"/>
+                            <constraint firstItem="dCm-3y-pLn" firstAttribute="top" secondItem="f4N-Jc-EtE" secondAttribute="bottom" constant="10" id="WXR-kc-OBy"/>
+                            <constraint firstItem="f4N-Jc-EtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="WkK-dr-OFC"/>
+                            <constraint firstItem="dCm-3y-pLn" firstAttribute="leading" secondItem="NDD-ZS-ZVk" secondAttribute="trailing" constant="62" id="YCu-jB-x41"/>
+                            <constraint firstItem="NDD-ZS-ZVk" firstAttribute="top" secondItem="f4N-Jc-EtE" secondAttribute="bottom" constant="10" id="bJO-Wx-8OT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NDD-ZS-ZVk" secondAttribute="trailing" constant="171" id="ija-Kf-Ti8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NDD-ZS-ZVk" secondAttribute="bottom" constant="34" id="nzO-jA-rKI"/>
+                            <constraint firstItem="f4N-Jc-EtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="w2W-wG-1ZS"/>
+                            <constraint firstItem="NDD-ZS-ZVk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="zQO-NE-OwS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myPreView" destination="f4N-Jc-EtE" id="Qa1-Zj-A9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
